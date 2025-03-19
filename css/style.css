@@ -773,30 +773,25 @@ h6 {
   /* gap: calc(32rem / 16); */
 /* } */ */ */
 
-.contact-socials {
-  position: relative; /* Remove absolute positioning */
-  display: flex;
-  flex-direction: row; /* Align items horizontally */
-  justify-content: center; /* Center items */
-  gap: 20px; /* Add spacing between icons */
-  margin-top: 20px; /* Add space between form and social icons */
-}
-
 .top-first,
 .top-second {
   position: static; /* Removes absolute positioning */
 }
 
-/* .contact-socials {
-  position: absolute;
-  right: 60px;
+.contact-socials {
+  position: relative;
+  /* right: 60px; */
   bottom: 30px;
+  top: 50px;
+  width:100%; 
+  justify-content: center;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: calc(32rem / 16);
 }
 
-.top-first {
+/* .top-first {
   position: absolute;
   right: -30px;
   top: 80px;
@@ -1073,4 +1068,17 @@ h6 {
   .benefits-card-content {
     width: 80%;
   }
+
 }
+
+
+@media (max-width: 480px) {
+  .slogan-text {
+    font-size: 4vw;
+  }
+  .header-text{
+    font-size: 1.6vw; 
+  }
+
+}
+
