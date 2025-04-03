@@ -356,15 +356,24 @@ h6 {
 }
 
 /* Video-Section */
+
 .video {
   padding: 50px 0;
 }
 
+.video-player {
+  width: 100%;
+  position: relative; 
+
+}
 .ballcode-video {
-  display: block;
+  display: flex;
   width: 100%;
   border-radius: 8px;
+  justify-self: center; 
+  align-items: center;
   cursor: pointer;
+  color: black; 
 }
 
 /* Benefits-Section */
