@@ -51,7 +51,7 @@ body {
   color: #fafafa;
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url('../assets/images/gradient-bg-desktop.png');
+  /* background-image: url('../assets/images/gradient-bg-desktop.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -572,7 +572,7 @@ h6 {
   border-width: 5px;
   border-image-source: linear-gradient(to right, #fc4f02, #0c72b3);
   border-image-slice: 1;
-  min-height: 200px; /* Ensures a base height */
+  height: 200px; /* Ensures a base height */
 }
 
 .reviews-card-header {
@@ -597,6 +597,7 @@ h6 {
 
 .reviews-card-text {
   margin-top: calc(16rem / 16);
+
   font-family: var(--abeezee-ff);
   font-size: var(--fs-9);
   text-align: center;
@@ -1086,8 +1087,31 @@ h6 {
     font-size: 4vw;
   }
   .header-text{
-    font-size: 1.6vw; 
+    font-size: 4vw; 
   }
-
+  .wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+  }
+  
+  .marquee p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
 }
 
